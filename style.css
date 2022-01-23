@@ -2,10 +2,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 body {
-  background-color: #e5e5e5;
+  background-color: white;
   font-family: "Poppins", sans-serif;
 }
 
 .carousel-inner {
   background-size: cover;
+}
+
+.text-color {
+  color: #231d4f;
+}
+.fa-check-circle {
+  color: #231d4f;
+}
+
+.convention-button {
+  background-color: #f496d265;
+  border: none;
+  padding: 9px 16px;
+  color: #3f87f5;
+}
+.hot {
+  background-color: #ff4e4e;
+  float: right;
+  position: relative;
+  right: 16px;
+  bottom: 10px;
+  border: none;
+  color: white;
 }
