@@ -32,3 +32,10 @@ body {
   border: none;
   color: white;
 }
+
+.btn-color {
+  background-color: white;
+  border: none;
+  padding: 9px 16px;
+  color: #3f87f5;
+}
