@@ -40,3 +40,9 @@ body {
   padding: 9px 16px;
   color: #3f87f5;
 }
+
+.toast-button {
+  background-color: #ff4e4e;
+  border: none;
+  float: right;
+}

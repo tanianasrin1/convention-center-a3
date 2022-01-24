@@ -264,17 +264,19 @@
                       <h3 class="">Setting Table</h3>
                       <i class="bg-primary p-2 fa-2x text-white rounded-circle fas fa-utensils"></i>
                       <p class="small text-muted">Henry doesn’t think fancier necessarily equals better, so forget fancy appetizers. A couple tried-and-true necessities will impress .</p>
-                  </div>
+                  </div> <br>
                   <div class="col-lg-4  col-12">
                       <h3> Practices</h3>
                       <i class="bg-primary p-2 fa-2x text-white rounded-circle fas fa-hamburger"></i>
                       <p class="small text-muted">Henry advises that you should avoid repeat ingredients in a menu. Depending on the ingredient in questio</p>
-                  </div>
+                  </div> <br>
                   <div class="col-lg-4  col-12">
                       <h3 class="">food  Test</h3>
                       <i class="bg-primary p-2 text-white fa-2x rounded-circle fas fa-pizza-slice"></i>
-                      <p class="text-muted small">Food is any substance consumed to provide nutritional support for an organism. Food is usually of plant  fungal origin</p>
+                      <p class="text-muted small">Food is any substance consumed to provide nutritional support for an organism. Food is usually of plant  fungal origin</p> <br>
                   </div>
+
+                  <a href="http://dpc-bd.com/" target="-blank"><button class="btn btn-primary"> See More </button></a>
                   
               </div>
               
@@ -282,7 +284,32 @@
           </div>
 
           </div>
+          
         </section>
+
+        <section>
+          <div class="container">
+
+         <div class="text-center">
+          <button onclick="see()" class="toast-button rounded-pill text-white px-4 py-2"> Toast Button </button>
+         </div>
+
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="icons/arrow-forward 1.svg" class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                This is a toast message.
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        
        
      </main>
 
@@ -292,5 +319,25 @@
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+         var option={
+           Animation: true,
+           delay: 20000
+         }
+         var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+         var toastList = toastElList.map(function (toastEl) {
+         return new bootstrap.Toast(toastEl, option)
+
+        })
+        function see(){
+          for(var i=0; i<toastList.length; i++){
+            toastList[i].show();
+          }
+
+        }
+
+    </script>
+
 </body>
 </html>
